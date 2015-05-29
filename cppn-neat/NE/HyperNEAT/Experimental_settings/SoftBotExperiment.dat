@@ -1,0 +1,109 @@
+////////////////
+// EXPERIMENT //
+//--------------------------------------------------------
+ExperimentType 1.0
+PopulationSize 30.0
+MaxGenerations 1000.0
+
+///////////////
+// CPPN-NEAT //
+//--------------------------------------------------------
+DisjointCoefficient 2.0
+ExcessCoefficient 2.0
+WeightDifferenceCoefficient 1.0
+FitnessCoefficient 0.0
+CompatibilityThreshold 6.0
+CompatibilityModifier 0.3
+SpeciesSizeTarget 8.0
+DropoffAge 15.0
+AgeSignificance	1.0
+SurvivalThreshold 0.2
+MutateAddNodeProbability 0.03
+MutateAddLinkProbability 0.05
+MutateDemolishLinkProbability 0.00
+MutateLinkWeightsProbability 0.8
+MutateOnlyProbability 0.25
+MutateLinkProbability 0.1
+AllowAddNodeToRecurrentConnection 0.0
+SmallestSpeciesSizeWithElitism 5.0
+MutateSpeciesChampionProbability 0.0
+MutationPower 2.5
+AdultLinkAge 18.0
+AllowRecurrentConnections 0.0
+AllowSelfRecurrentConnections 0.0
+ForceCopyGenerationChampion 1.0 // With this probability the generation champion will be copied in the next generation
+LinkGeneMinimumWeightForPhentoype 0.0
+GenerationDumpModulo 1.0
+RandomSeed -1.0
+ExtraActivationFunctions 1.0
+AddBiasToHiddenNodes 0.0
+SignedActivation 1.0
+ExtraActivationUpdates 9.0
+OnlyGaussianHiddenNodes 0.0
+SymmetryInputs 0.0
+
+///////////////
+// STRUCTURE //
+//--------------------------------------------------------
+MaterialsNum 4.0
+NumVoxelsX 5.0
+NumVoxelsY 5.0
+NumVoxelsZ 5.0
+EvolveMaterialProperties 0.0
+
+///////////////////////
+//  STATS & OUTPUT   //
+//--------------------------------------------------------
+RecordEntireGenEvery 10.0
+RecordBehaviorSignatureCSV 0.0 // save csv's of behavior signatures
+RecordBehaviorSignaturePDF 0.0 // save plots of behavior signatures
+AllBehaviors 0.0 // Only for visualization of all behavior signatures
+RecordStats 1.0
+StoreNovelIndividuals 0.0
+StoreBestIndividuals 1.0
+FitnessStoreNovelIndividuals 0.0 // Only when the FitnessNovelIndividuals above is enabled
+ComputeSparsity 0.0
+
+/////////////
+// FITNESS //
+//--------------------------------------------------------
+FitnessType 2.0
+FitnessPenaltyType 4.0
+FitnessPenaltyExp 1.0
+FitnessNovelty 0.0 // Compute novelty for fitness based search and keep novel individuals, a Behavior should be selected and novelty search not
+
+//////////////
+// BEHAVIOR //
+//--------------------------------------------------------
+BehaviorType 0.0 // 1->trajectoryXYZ, 2->trajectoryXY, 3->paceDFT, 4->Shape, 5->voxelsTouchingGround
+BehaviorRecordInterval 0.001 // How much time between observations
+BehaviorRecordStartInterval 0.0 // How much time until record of observations starts from the beggining of the simulation
+PreProcessType 2.0 // 0-> Nothing, 1 -> Discrete Fourier, 2 -> Basic normalization
+SimilarityEvaluationType 1.0 // 1 -> Absolute difference
+DFTsimilarityLength 0.0 // How many coefficients to compare
+
+////////////////////
+// NOVELTY SEARCH //
+//--------------------------------------------------------
+NoveltySearch 0.0 // If novelty search is on, make sure Behavior type is not set to zero.
+NoveltyThreshold 0.5 // Individual with minimum difference above this value will enter the novelty set, value depends on the type of experiment and the type of distance metric.
+NoveltyDistanceKNNvalue 10.0 // Number of neighbor behaviors that are going to count in average distance.
+
+/////////////////
+// COMPETITION //
+//--------------------------------------------------------
+SpeciesCompetition 0.0 // 0.0 no competition randomly from the best 20 percent(check SurvivalThreshold), 1.0 competition in respect to fitness,  2.0 in respect to global Novelty, 3.0 local novelty.
+SpeciesCompetitionSize 4.0 // Size of the competition
+
+//////////
+// MISC //
+//--------------------------------------------------------
+ProgressSimulationInfo 0.0 // set to 1.0 if more information about each simulation required
+VoxSimAll 8.0 // Enum of all behavior in voxsim
+
+//////////////////
+// EXPERIMENTAL //
+//--------------------------------------------------------
+ForceCopyFitChampOptimizeAt 0.0 //0 -> not enabled, other value -> At this generation the novelty search turns to fitness-based, copying mutations of the evolution champion so far, Novelty Search must be enabled
+Random 0.0 // if random, novelty search should be enabled
+CopyGenerationChampionFitnessBackUp 0.0 // If this is enabled the generation champion will be computed by the secondary measure, in NoveltySearch will be fitness, in fitness will be Novelty

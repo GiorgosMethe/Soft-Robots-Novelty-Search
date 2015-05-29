@@ -1,0 +1,64 @@
+﻿# Compiled source #/out/*
+# Compiled source #/build/*
+###################
+*.o
+*.so
+*.pro.user
+*.user
+Makefile
+*~
+build-*
+*.autosave
+*.a
+BUILD
+
+# CPPN-NEAT
+###################
+
+cppn-neat/Board/out/*
+cppn-neat/Board/build/*
+
+cppn-neat/JGTL/out/*
+cppn-neat/JGTL/build/*
+
+cppn-neat/tinyxmldll/out/*
+cppn-neat/tinyxmldll/build/*
+
+cppn-neat/zlib/out/*
+cppn-neat/zlib/build/*
+
+cppn-neat/NE/HyperNEAT/build/*
+cppn-neat/NE/HyperNEAT/out/*
+
+# GaDirectEncoging
+###################
+GaDirectEncoding/build/*
+GaDirectEncoding/galib247/ga/include/*
+GaDirectEncoding/galib247/ga/lib
+GaDirectEncoding/galib247/ga/lib
+
+# VOXCAD
+###################
+VoxCad/GeneratedFiles/
+VoxCad/release/
+VoxCad/Makefile
+
+# VOXSIM
+###################
+VoxSim/build/
+
+# SIMFILES
+###################
+SimFiles/random/*
+
+# MultiNEAT
+###################
+MultiNEAT/build
+
+# RandomVoxBotEvolution
+###################
+RanGenEncoding/build/
+
+#RandomSoftBots
+###################
+RandomSoftBots/build
