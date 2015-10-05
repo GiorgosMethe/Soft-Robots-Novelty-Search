@@ -5,12 +5,25 @@ This public repository is providing all the source code used for my Master thesi
 ### Publications
 
 * "Evolution of Soft-Robots by Novelty Search"
-
-`@article{methenitis2014evolution,
-  title={Evolution of Soft Robots by Novelty Search},
-  author={Methenitis, Georgios},
-  year={2014}
-}`
+'
+@inproceedings{Methenitis:2015:NSS:2739480.2754731,
+ author = {Methenitis, Georgios and Hennes, Daniel and Izzo, Dario and Visser, Arnoud},
+ title = {Novelty Search for Soft Robotic Space Exploration},
+ booktitle = {Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation},
+ series = {GECCO '15},
+ year = {2015},
+ isbn = {978-1-4503-3472-3},
+ location = {Madrid, Spain},
+ pages = {193--200},
+ numpages = {8},
+ url = {http://doi.acm.org/10.1145/2739480.2754731},
+ doi = {10.1145/2739480.2754731},
+ acmid = {2754731},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cppn, cppn-neat, locomotion, novelty search, soft robotics, space exploration, voxcad},
+} 
+'
 
 * "Novelty Search for Soft Robotic Space Exploration" in the proccedings of GECCO 2015, Madrid.
 
