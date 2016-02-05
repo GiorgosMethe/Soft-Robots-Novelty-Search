@@ -23,7 +23,8 @@ This public repository is providing all the source code used for my Master thesi
  publisher = {ACM},
  address = {New York, NY, USA},
  keywords = {cppn, cppn-neat, locomotion, novelty search, soft robotics, space exploration, voxcad},
-}```
+}
+```
 
 * "Novelty Search for Soft Robotic Space Exploration" in the proccedings of GECCO 2015, Madrid.
 
